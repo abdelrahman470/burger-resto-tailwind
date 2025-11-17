@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--  Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="./style.css" rel="stylesheet" />
+
+    <title>burger website</title>
+</head>
+
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="header" class=" w-full fixed top-0 left-0 z-50  ">
+
+        <nav class="container lg:max-w-screen-lg relative h-14 mx-auto flex justify-between items-center max-sm:px-4  ">
+            <div>
+                <a href="#home" class="text-2xl uppercase">BUR<span
+                        class="text-secondaryColor font-serif">GER</span></a>
+            </div>
+
+            <div id="menu_nav" class=" hidden absolute top-0 left-0 w-full pt-20 pb-14 border-b border-secondaryColor
+            md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:mr-2  ">
+                <ul class="flex flex-col text-center gap-7 md:flex-row">
+                    <li><a href="#home" class="link hover:text-secondaryColor">Home</a></li>
+                    <li><a href="#about" class="link hover:text-secondaryColor">About Us</a></li>
+                    <li><a href="#menu" class="link hover:text-secondaryColor">Menu</a></li>
+                    <li><a href="#review" class="link hover:text-secondaryColor">Review</a></li>
+                    <li><a href="#contact" class="link hover:text-secondaryColor">Contact</a></li>
+                </ul>
+                <div class="absolute top-[0.7rem] right-4 text-3xl cursor-pointer hover:text-4xl ease-out duration-150">
+                    <i id="close_icon" class="ri-close-line md:hidden"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <i id="menu_icon" class="ri-menu-2-line cursor-pointer text-xl md:hidden"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+        <section id="home" class="md:pt-28">
+            <div class="container flex flex-col md:flex-row md:justify-between items-center gap-y-5">
+
+                <div class=" w-60 md:w-72  mx-auto animate__animated animate__fadeInLeft   ">
+                    <img src="./img/home-image.png" alt="" class=" mask1 w-full ">
+                </div>
+
+                <div class=" text-center md:basis-[45%] px-1 animate__animated animate__fadeInRight">
+
+                    <h1 class="text-3xl md:text-4xl uppercase font-semibold font-mono md:text-left">HAPPY TUMMY WITH
+                        <span class="text-secondaryColor">:)</span>
+                    </h1>
+                    <span id="typewriter" class="font-serif text-2xl text-secondaryColor"></span>
+
+                    <div class="separator md:mx-0 "></div>
+
+                    <p class="paragraph md:text-left md:max-w-[380px]">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Odio voluptatibus, inventore rem
+                        repellendus reprehenderit earum. Reprehenderit voluptates eos excepturiitate, ullam officia?
+                    </p>
+
+                    <div class="flex justify-center md:justify-start gap-10 my-10">
+                        <div>
+                            <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+                            <h3>Delicious</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+                            <h3>Fresh</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+                            <h3>Organic</h3>
+                        </div>
+                    </div>
+
+                    <a href="#menu" class="btn md:mx-0">Hungry!</a>
+
+                </div>
+
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
+        <section id="category">
+            <div class="container">
+                <div class="flex flex-col items-center gap-5 md:flex-row  ">
+                    <div
+                        class=" categ__card bg-amber-900 overflow-hidden w-[90%] max-w-[400px] flex gap-5 justify-start py-3 rounded-lg drop-shadow-lg hover:-translate-y-2 duration-150 ">
+                        <div class="img w-32 relative ">
+                            <img src="./img/burger-1.png" alt="" class=" mask2 absolute -left-2 -bottom-5 ">
+                        </div>
+                        <div class="text">
+                            <h2 class=" text-xl font-bold ">FOOD</h2>
+                            <p class=" text-xs leading-5 pb-4 ">Lorem ipsum dolor sit.</p>
+                            <a href="" class="  text-secondaryColor hover:text-black underline ">Buy Online</a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="categ__card bg-amber-900 overflow-hidden w-[90%] max-w-[400px] flex gap-5 justify-start py-3 rounded-lg drop-shadow-lg hover:-translate-y-2 duration-150 ">
+                        <div class="img w-32 relative ">
+                            <img src="./img/snack-1.png" alt="" class=" mask2 absolute -left-2 -bottom-5 ">
+                        </div>
+                        <div class="text">
+                            <h2 class=" text-xl font-bold ">SNAKE</h2>
+                            <p class=" text-xs leading-5 pb-4 ">Lorem ipsum dolor sit.</p>
+                            <a href="" class="  text-secondaryColor hover:text-black underline ">Buy Online</a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="categ__card bg-amber-900 overflow-hidden w-[90%] max-w-[400px] flex gap-5 justify-start py-3 rounded-lg drop-shadow-lg hover:-translate-y-2 duration-150 ">
+                        <div class="img w-32 relative ">
+                            <img src="./img/beverage-2.png" alt="" class=" mask2 absolute -left-1 -bottom-4 ">
+                        </div>
+                        <div class="text">
+                            <h2 class=" text-xl font-bold ">BEVERAGE</h2>
+                            <p class=" text-xs leading-5 pb-4 ">Lorem ipsum dolor sit.</p>
+                            <a href="" class="  text-secondaryColor hover:text-black underline ">Buy Online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
+        <section id="promo">
+            <div class="container">
+                <div class=" flex flex-col gap-5 md:flex-row ">
+                    <div class=" promo__card1 bg-[#1a1007] rounded-md p-8 drop-shadow-lg lg:flex lg:flex-row-reverse ">
+                        <div class=" w-40 pb-5 mx-auto lg:basis-1/2 ">
+                            <img src="./img/promo-1.png" alt="" class=" mask1 ">
+                        </div>
+                        <div>
+                            <h4 class=" text-redColor pb-2">Payday Promo</h4>
+                            <h2 class=" text-xl font-bold  pb-2 ">GET A 10% DISCOUNT ON PAYDAY WEEK</h2>
+                            <p class=" paragraph pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="" class=" text-black font-bold bg-secondaryColor py-2 px-4 rounded-full ">Get Now
+                                &#8594;</a>
+                        </div>
+                    </div>
+
+                    <div class=" promo__card2 bg-[#1a1007] rounded-md p-8 drop-shadow-lg lg:flex lg:flex-row-reverse ">
+                        <div class=" w-40 pb-5 mx-auto lg:basis-1/2 ">
+                            <img src="./img/promo-2.png" alt="" class=" mask1 ">
+                        </div>
+                        <div>
+                            <h4 class=" text-redColor pb-2">Payday Promo</h4>
+                            <h2 class=" text-xl font-bold  pb-2 ">GET A 10% DISCOUNT ON PAYDAY WEEK</h2>
+                            <p class=" paragraph pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="" class=" text-black font-bold bg-secondaryColor py-2 px-4 rounded-full ">Get Now
+                                &#8594;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+        <section id="about">
+            <div class="container">
+                <div
+                    class="flex flex-col gap-10 rounded-b-2xl drop-shadow-xl bg-blackColor max-lg:max-w-[608px] mx-auto  lg:flex-row lg:gap-5 lg:p-10 ">
+                    <div class=" about__img lg:basis-2/3  ">
+                        <img src="./img/about.jpg" alt="" class=" w-full lg:object-cover rounded-b-2xl  ">
+                    </div>
+
+                    <div class=" about__content px-4 lg:basis-2/3 ">
+                        <h1 class=" text-2xl md:text-3xl uppercase font-bold tracking-wider leading-9 mb-4 ">FIND FOOD
+                            AND DRINKS, ALL-IN-ONE PLACE FOR YOUR BEST TASTE.</h1>
+                        <p class=" paragraph mb-8 ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                            Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <div class="grid grid-cols-2 gap-y-3 ">
+                            <p class=""><i class="fa-solid fa-check mr-2 text-secondaryColor"></i>Best Price</p>
+                            <p class=""><i class="fa-solid fa-check mr-2 text-secondaryColor"></i>Fresh Ingredient</p>
+                            <p class=""><i class="fa-solid fa-check mr-2 text-secondaryColor"></i>Best Service</p>
+                            <p class=""><i class="fa-solid fa-check mr-2 text-secondaryColor"></i>Health Protocol</p>
+                        </div>
+                        <div class="">
+                            <a href=""
+                                class=" inline-block text-black font-bold bg-secondaryColor py-4 px-9  mt-7 mb-4 rounded-xl  ">About
+                                Us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
+        <section id="menu">
+            <div class="container">
+                <div class=" text-center mb-9 ">
+                    <h1 class=" text-3xl font-bold relative ">OUR BEST MENU</h1>
+                    <span class=" block w-[150px]  border-2 border-secondaryColor rounded-[100%] mx-auto my-5 "></span>
+                    <p class=" paragraph max-w-[608px] mx-auto ">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                    </p>
+                </div>
+
+                <div id="tabs_menu" class=" flex flex-wrap gap-4 text-center justify-center mb-16">
+                    <button data-tabs="all" class=" active">All</button>
+                    <button data-tabs="foods" class=" ">Food</button>
+                    <button data-tabs="snaks" class=" ">Snack</button>
+                    <button data-tabs="beverages" class=" ">Beverage</button>
+                </div>
+
+                <div class=" menu__items grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center ">
+
+                    <!-- foods -->
+                    <div class="category_items foods bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/burger-1.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items foods bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/burger-2.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items foods bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/burger-3.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items foods bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/burger-4.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items foods bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/burger-5.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items foods bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/burger-6.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+
+                    <!-- snaks -->
+                    <div class="category_items snaks bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/snack-1.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items snaks bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/snack-2.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items snaks bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/snack-3.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items snaks bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/snack-4.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items snaks bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/snack-5.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items snaks bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/snack-6.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+
+                    <!-- beverages -->
+                    <div class="category_items beverages bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/beverage-1.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items beverages bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/beverage-2.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items beverages bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/beverage-3.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items beverages bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/beverage-4.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+                    <div class="category_items beverages bg-[#464646] rounded-3xl  max-w-[332px] h-full p-6">
+                        <div class=" mask1 drop-shadow-lg h-56 grid place-content-center  ">
+                            <img src="./img/beverage-5.png" alt="" class=" w-40 ">
+                        </div>
+                        <div class=" ">
+                            <h1 class=" text-xl font-bold  pb-2 ">REGULAR BEEF BURGER</h1>
+                            <p class="paragraph mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="">$42.00</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+        <section id="review" class="bg-primaryColorLight py-20">
+            <div class=" review container">
+                <div class=" text-center mb-9 ">
+                    <h1 class=" text-3xl font-bold relative ">CUSTOMER REVIEW</h1>
+                    <span class=" block w-[150px]  border-2 border-secondaryColor rounded-[100%] mx-auto my-5 "></span>
+                    <p class=" paragraph max-w-[608px] mx-auto ">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                    </p>
+                </div>
+
+                <div class="swiper py-10">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div
+                                class=" flex flex-col gap-5 bg-primaryColor rounded-xl border-l-2 border-secondaryColor p-6 ">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                                </p>
+                                <div class=" flex items-center ">
+                                    <img src="./img/review-1.jpg" alt="review" class="rounded-full w-14 h-14 ">
+                                    <div class=" ml-2 ">
+                                        <p class="font-serif uppercase font-semibold">John doe</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right ml-auto text-secondaryColor text-2xl "></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class=" flex flex-col gap-5 bg-primaryColor rounded-xl border-l-2 border-secondaryColor p-6 ">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                                </p>
+                                <div class=" flex items-center ">
+                                    <img src="./img/review-2.jpg" alt="review" class="rounded-full w-14 h-14 ">
+                                    <div class=" ml-2 ">
+                                        <p class="font-serif uppercase font-semibold">John doe</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right ml-auto text-secondaryColor text-2xl "></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class=" flex flex-col gap-5 bg-primaryColor rounded-xl border-l-2 border-secondaryColor p-6 ">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                                </p>
+                                <div class=" flex items-center ">
+                                    <img src="./img/review-3.jpg" alt="review" class="rounded-full w-14 h-14 ">
+                                    <div class=" ml-2 ">
+                                        <p class="font-serif uppercase font-semibold">John doe</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right ml-auto text-secondaryColor text-2xl "></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class=" flex flex-col gap-5 bg-primaryColor rounded-xl border-l-2 border-secondaryColor p-6 ">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                                </p>
+                                <div class=" flex items-center ">
+                                    <img src="./img/review-4.jpg" alt="review" class="rounded-full w-14 h-14 ">
+                                    <div class=" ml-2 ">
+                                        <p class="font-serif uppercase font-semibold">John doe</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right ml-auto text-secondaryColor text-2xl "></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class=" flex flex-col gap-5 bg-primaryColor rounded-xl border-l-2 border-secondaryColor p-6 ">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique culpa ut amet voluptas asperiores alias sed consequatur.
+                                </p>
+                                <div class=" flex items-center ">
+                                    <img src="./img/review-5.jpg" alt="review" class="rounded-full w-14 h-14 ">
+                                    <div class=" ml-2 ">
+                                        <p class="font-serif uppercase font-semibold">John doe</p>
+                                        <p class="paragraph">Designer</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right ml-auto text-secondaryColor text-2xl "></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
+        <section id="contact" class=" bg-secondaryColor py-16 ">
+            <div class="  container flex flex-col gap-5 md:items-center md:flex-row justify-between place-content-center">
+
+                <div class=" contact0 flex-1 ">
+                    <h2 class=" text-[26px] font-extrabold text-black mb-3 ">GET EXCLUSIVE UPDATE</h2>
+                    <p class="mb-6 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div id="the_fuckin_div" class=" contact1 flex flex-col flex-1 lg:flex-row  lg:gap-5 lg:items-baseline ">
+                    <input type="email"
+                        class="p-3 mb-4 rounded-xl max-w-[358px] lg:flex-1  focus:outline-none drop-shadow-lg text-blackColor "
+                        placeholder="Email address">
+                    <button class="bg-black p-3 rounded-3xl max-w-[358px]  hover:bg-zinc-800"><i
+                            class="fa-solid fa-paper-plane mr-2"></i>Subscribe</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <ul class="grid grid-cols-1 items-start gap-5 pb-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+                    <li class="">
+                        <div class="space-y-3">
+                            <a href="" class="text-4xl uppercase">
+                                Bur <span class="text-secondaryColor">ger</span>
+                            </a>
+                            <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-lg uppercase">SUPPORT</h3>
+                            <a href="" class="text-xs hover:text-secondaryColor">FAQs</a>
+                            <a href="" class="text-xs hover:text-secondaryColor">Privacy & Policy</a>
+                            <a href="" class="text-xs hover:text-secondaryColor">Terms & Condition</a>
+                            <a href="" class="text-xs hover:text-secondaryColor">Contact</a>
+                        </div>
+                    </li>
+
+                    <li class="space-y-8">
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase">Phone</h3>
+                            <p class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-phone text-secondaryColor text-lg"></i>
+                                +1 000 000 0000
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase">Email</h3>
+                            <p class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-envelope text-secondaryColor text-lg"></i>
+                                burger.info@email.com
+                            </p>
+                        </div>
+                    </li>
+                    <li class="space-y-8">
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase">ADDRESS</h3>
+                            <p class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-location-dot text-secondaryColor text-lg"></i>
+                                Address goes here
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase">FOLLOW US</h3>
+                            <p class="flex items-center gap-2 text-xs">
+                                <i class="fa-brands fa-facebook-f text-secondaryColor mr-2 text-lg"></i>
+                                <i class="fa-brands fa-twitter text-secondaryColor mr-2 text-lg"></i>
+                                <i class="fa-brands fa-square-instagram text-secondaryColor text-lg"></i>
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="flex flex-col items-center border-t border-primaryColorLight py-5 md:flex-row md:justify-between">
+                    <p class="paragraph">Burger Template Kit by Kakashi</p>
+                    <p class="paragraph">Copyright &copy; 2025. All rights reserved</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="#home" id="scrollbtn" class="fixed right-4 -bottom-1/2 bg-secondaryColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-blackColor z-50 hover:-translate-y-1 ease-in duration-200">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script >
+        const swiper = new Swiper('.swiper', {
+            peed: 400,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            grabCursor: true,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+
+        });
+    </script>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
+<!-- 
+~~~~~~~~~~ Footer ~~~~~~~~~~
+Bur<span>ger</span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+
+PHONE
+<i class="fa-solid fa-phone"></i>
++1 000 000 0000
+
+EMAIL
+<i class="fa-solid fa-envelope"></i>
+burger.info@email.com
+
+SUPPORT
+FAQ's | Privacy Policy | Term & Condition | Contact
+
+ADDRESS
+<i class="fa-solid fa-location-dot"></i>
+Address goes here
+
+FOLLOW US
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-square-instagram"></i>
+
+~~~~~~~~~~ Scroll Up ~~~~~~~~~~
+<i class="fa-solid fa-arrow-up"></i> 
+
+-->
