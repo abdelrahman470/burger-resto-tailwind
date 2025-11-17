@@ -2,7 +2,8 @@
 
 Landing page template for a modern **Burger / Fast Food Restaurant**, built using **HTML**, **Tailwind CSS**, and **Vanilla JavaScript**, with a fast development workflow powered by **Vite**.
 The template is fully responsive and includes multiple interactive UI features.
-
+---
+I hosted the project on Netlify, go and see it now! [burger website](https://burger-resto-47.netlify.app/).
 ---
 
 ## ✨ **Features**
